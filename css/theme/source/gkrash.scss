@@ -1,0 +1,75 @@
+/**
+ * gkrash's presentation theme
+ *
+ * This was originally duped from the league theme that came with reveal...
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ * Copyright (C) 2017 Gary Krasovic, http://gkrash.us
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+//
+
+//
+// My color palette for this theme:
+//
+
+
+$very-light-gray: #dbe6ec;
+$light-gray: #99a9b3;
+$gray: #67747c;
+$dark-gray: #3b444f;
+$very-dark-gray: #2c3643;
+
+$cyan: #0fdebd;
+$blue: #288ad6;
+$purple: #ff708e;
+$green: #16c98d;
+$red: #fa5e5b;
+$orange: #ffc83f;
+$light-orange: #feef6d;
+$softblue: #8abee5;
+$softgreen: #c7e6aa;
+
+// Include theme-specific fonts
+//@import url(../../lib/font/league-gothic/league-gothic.css);
+//@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Slabo+27px|Source+Sans+Pro);
+
+
+// Override theme settings (see ../template/settings.scss)
+$headingTextShadow: none;
+$heading1TextShadow: none;
+$headingFont: 'Slabo 27px', serif;
+$headingTextTransform: none;
+$headingColor: $light-gray;
+
+$mainFont: 'Source Sans Pro', sans-serif;
+$mainColor: $very-light-gray;
+
+$linkColor: $orange;
+$linkColorHover: $blue;
+
+
+
+$selectionBackgroundColor: $dark-gray;
+$selectionColor: #1d508d;
+
+
+
+$backgroundColor: $very-dark-gray;
+// Background generator
+@mixin bodyBackground() {
+	@include vertical-gradient( $very-dark-gray, $dark-gray );
+}
+
+
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
